@@ -1,0 +1,22 @@
+{
+  "name": "first-redesign",
+  "version": "1.0.0",
+  "description": "redesign workflow",
+  "main": "main.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamirann/first-redesign.git"
+  },
+  "author": "Kamriann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamirann/first-redesign/issues"
+  },
+  "homepage": "https://github.com/kamirann/first-redesign#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
