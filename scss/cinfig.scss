@@ -1,0 +1,58 @@
+$primaryC: #4f1b92;
+$secondaryC: #546e7a;
+$darkC: #29434e;
+$lightC: #819ca9;
+$textC: #f3f3f3;
+$lightTextC: $lightC;
+$darkTextC: $darkC;
+$fontSizes: (
+  $sSize: 1rem,
+  $mSize: 1.25rem,
+  $lSize: 3.5rem,
+  $xlSize: 4rem,
+);
+$fontFamily: (
+  $primaryFF: (
+    "Volkorn",
+    sans-serif,
+  ),
+  $secondaryFF: (
+    "Roboto",
+    sans-serif,
+  ),
+);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Vollkorn&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 1rem 0.75rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+u {
+  list-style: none;
+}
+
+a {
+  text: {
+    align: center;
+    decoration: none;
+    transform: uppercase;
+  }
+}

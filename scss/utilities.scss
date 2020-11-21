@@ -1,0 +1,62 @@
+@import "config";
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.title {
+  color: $textC;
+  margin: 1rem 0;
+  font: {
+    size: $xlSize;
+    weight: 900;
+    line-height: 1.6;
+  }
+}
+
+.text {
+  color: $lightTextC;
+  font : {
+    family: "Roboto", sans-serif;
+    size: $sSize;
+    weight: 400;
+    line-height: 1.2;
+  }
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  font: {
+    size: $mSize;
+    weight: 400;
+  }
+}
+
+.btn {
+  &-dark {
+    @extend %btn-shared;
+    color: $lightTextC;
+    background: $darkC;
+  }
+  &-light {
+    @extend %btn-shared;
+    color: $dark;
+    background: $lightC;
+  }
+}
+
+.py-1 {
+  padding: 1.25rem 0;
+}
+.py-2 {
+  padding: 2.5rem 0;
+}
+.py-3 {
+  padding: 3.75rem 0;
+}
