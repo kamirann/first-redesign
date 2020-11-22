@@ -39,7 +39,7 @@ a {
   margin: 1rem 0;
   font-size: 4rem;
   font-weight: 900;
-  font-line-height: 2rem; }
+  line-height: 2rem; }
 
 .text {
   color: #ebebeb;
@@ -84,3 +84,20 @@ a {
 
 .bg-light {
   background: #ebebeb; }
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none; }
+
+.dots {
+  height: 14px;
+  width: 14px;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 6px; }
+  .dots:hover {
+    cursor: pointer; }
+
+li.slick-active div {
+  background: #fff; }

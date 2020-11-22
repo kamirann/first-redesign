@@ -36,18 +36,70 @@
     grid-gap: 4rem;
 
     h1 {
-      background: linear-gradient(to right, $darkC, $primaryC);
+      background: linear-gradient(to right, $darkC, $secondaryC);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      align-self: flex-start;
     }
 
-    .text {
-      align-self: flex-end;
-      color: $darkTextC;
-      padding: 2rem;
-      border: 1px dotted $primaryC;
-      border-radius: 20%;
+    .text-container {
+      &.show .text {
+        border: 1px solid rgba($darkC, 0.3);
+        border-radius: 30% 5% 30% 5%;
+        box-shadow: 1px 1px 15px $secondaryC;
+        opacity: 1;
+      }
+
+      .text {
+        padding: 3rem;
+        opacity: 0;
+        color: $darkTextC;
+        transition: all 1s linear 0.3s;
+      }
+    }
+  }
+}
+
+#carousel {
+  .carousel-container {
+    position: relative;
+    display: grid !important;
+    .slide-1 {
+      background: url("../img/5f607e88c268e46148a68783_CS2520IMG2520125402x-p-2000.jpeg")
+        no-repeat 0 30% / cover;
+      height: 600px;
+    }
+
+    .slide-2 {
+      background: url("../img/5f6d82792ee39e7ced051bd6_slide2.jpg") no-repeat 0
+        30% / cover;
+      height: 600px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+      }
+      .dots {
+        height: 14px;
+        width: 14px;
+        background: url("../dist/img/angle-arrow-pointing-to-right.png")
+          no-repeat;
+        margin: 6px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      li.slick-active div {
+        background: #fff;
+      }
     }
   }
 }
