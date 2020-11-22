@@ -1,32 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Vollkorn&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Vollkorn&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: "Vollkorn", sans-serif;
-  background: #11191d; }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  padding: 1rem 0; }
-
-p {
-  margin: 1rem 0; }
-
-u {
-  list-style: none; }
-
-a {
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase; }
-
 * {
   padding: 0;
   margin: 0;
@@ -112,37 +84,3 @@ a {
 
 .bg-light {
   background: #ebebeb; }
-
-#whatWeDo .wwd-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 4rem; }
-  #whatWeDo .wwd-container.show .text-content,
-  #whatWeDo .wwd-container.show .image-content {
-    transform: translate3d(0, 0, 0); }
-  #whatWeDo .wwd-container .text-content {
-    transform: translate3d(-30rem, 3rem, -30rem);
-    align-self: center;
-    border-right: 3px solid #f3f3f3;
-    padding-right: 5rem;
-    transition: transform 1s; }
-  #whatWeDo .wwd-container .image-content {
-    align-self: center;
-    transform: translate3d(30rem, -3rem, 30rem);
-    transition: transform 0.7s linear 0.5s; }
-
-#design .about-design {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4rem; }
-  #design .about-design h1 {
-    background: linear-gradient(to right, #11191d, #4f1b92);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    align-self: flex-start; }
-  #design .about-design .text {
-    align-self: flex-end;
-    color: #11191d;
-    padding: 2rem;
-    border: 1px dotted #4f1b92;
-    border-radius: 20%; }

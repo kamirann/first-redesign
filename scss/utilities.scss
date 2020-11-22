@@ -1,40 +1,51 @@
 @import "config";
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
+  padding: 0 1rem;
   margin: auto;
   overflow: hidden;
 }
 
 .title {
-  color: $textC;
+  background: linear-gradient(to right, $textC, $darkTextC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 1rem 0;
   font: {
-    size: $xlSize;
+    size: map-get($fontSizes, "$xlSize");
     weight: 900;
-    line-height: 1.6;
+    line-height: 2rem;
   }
 }
 
 .text {
   color: $lightTextC;
+  padding-bottom: 1rem;
   font : {
     family: "Roboto", sans-serif;
-    size: $sSize;
+    size: map-get($fontSizes, "mSize");
     weight: 400;
-    line-height: 1.2;
   }
+  line-height: 1.6rem;
 }
 
 %btn-shared {
   display: inline-block;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
   outline: none;
   text-decoration: none;
   cursor: pointer;
   font: {
-    size: $mSize;
+    size: map-get($fontSizes, "mSize");
     weight: 400;
+  }
+  transition: all 0.4s;
+
+  &:hover {
+    border-radius: 2rem;
+    border-color: $lightC;
   }
 }
 
@@ -43,20 +54,29 @@
     @extend %btn-shared;
     color: $lightTextC;
     background: $darkC;
+    border: 1px solid rgba($secondaryC, 0.6);
   }
   &-light {
     @extend %btn-shared;
-    color: $dark;
+    color: $darkC;
     background: $lightC;
   }
 }
 
 .py-1 {
-  padding: 1.25rem 0;
+  padding: 1.5rem 0;
 }
 .py-2 {
-  padding: 2.5rem 0;
+  padding: 3.5rem 0;
 }
 .py-3 {
-  padding: 3.75rem 0;
+  padding: 5rem 0;
+}
+
+.bg-dark {
+  background: $darkC;
+}
+
+.bg-light {
+  background: $lightC;
 }

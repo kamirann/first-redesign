@@ -1,2 +1,53 @@
 @import "config";
 @import "utilities";
+
+// SECTION : WHAT WE DO
+#whatWeDo {
+  .wwd-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 4rem;
+
+    &.show .text-content,
+    &.show .image-content {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .text-content {
+      transform: translate3d(-30rem, 3rem, -30rem);
+      align-self: center;
+      border-right: 3px solid $textC;
+      padding-right: 5rem;
+      transition: transform 1s;
+    }
+
+    .image-content {
+      align-self: center;
+      transform: translate3d(30rem, -3rem, 30rem);
+      transition: transform 0.7s linear 0.5s;
+    }
+  }
+}
+
+#design {
+  .about-design {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+
+    h1 {
+      background: linear-gradient(to right, $darkC, $primaryC);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      align-self: flex-start;
+    }
+
+    .text {
+      align-self: flex-end;
+      color: $darkTextC;
+      padding: 2rem;
+      border: 1px dotted $primaryC;
+      border-radius: 20%;
+    }
+  }
+}
