@@ -1,4 +1,5 @@
 const WWD = document.querySelectorAll(".wwd-container");
+const aboutDesign = document.querySelectorAll(".text-container");
 
 const isInViewPort = (el) => {
   const rect = el.getBoundingClientRect();
@@ -10,18 +11,24 @@ const isInViewPort = (el) => {
   );
 };
 
-const run = () =>
+const run = () => {
   WWD.forEach((item) => {
     if (isInViewPort(item)) {
       item.classList.add("show");
     }
   });
-
+  aboutDesign.forEach((item) => {
+    if (isInViewPort(item)) {
+      item.classList.add("show");
+    }
+  });
+};
 // EVENTS
 window.addEventListener("load", run);
 window.addEventListener("resize", run);
 window.addEventListener("scroll", run);
 
+<<<<<<< HEAD:dist/main.js
 // navbar
 
 const navbar = document.querySelector(".navbar");
@@ -43,3 +50,14 @@ window.onscroll = function () {
     scrolled = false;
   }
 };
+=======
+// SLICK
+$(".carousel-container").slick({
+  nextArrows: document.querySelector("#slick-next"),
+  prevArrows: document.querySelector("#slick-prev"),
+  dots: true,
+  customPaging: function (slider, i) {
+    return '<div class="dots"></div>';
+  },
+});
+>>>>>>> e3627fbd9d62a633a63bdedda4c76ccca41f91a4:dist/js/main.js

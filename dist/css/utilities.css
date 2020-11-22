@@ -39,7 +39,7 @@ a {
   margin: 1rem 0;
   font-size: 4rem;
   font-weight: 900;
-  font-line-height: 2rem; }
+  line-height: 2rem; }
 
 .text {
   color: #ebebeb;

@@ -67,7 +67,7 @@ a {
   margin: 1rem 0;
   font-size: 4rem;
   font-weight: 900;
-  font-line-height: 2rem; }
+  line-height: 2rem; }
 
 .text {
   color: #ebebeb;
@@ -164,13 +164,44 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem; }
   #design .about-design h1 {
-    background: linear-gradient(to right, #11191d, #4f1b92);
+    background: linear-gradient(to right, #11191d, #546e7a);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    align-self: flex-start; }
-  #design .about-design .text {
-    align-self: flex-end;
+    -webkit-text-fill-color: transparent; }
+  #design .about-design .text-container.show .text {
+    border: 1px solid rgba(17, 25, 29, 0.3);
+    border-radius: 30% 5% 30% 5%;
+    box-shadow: 1px 1px 15px #546e7a;
+    opacity: 1; }
+  #design .about-design .text-container .text {
+    padding: 3rem;
+    opacity: 0;
     color: #11191d;
-    padding: 2rem;
-    border: 1px dotted #4f1b92;
-    border-radius: 20%; }
+    transition: all 1s linear 0.3s; }
+
+#carousel .carousel-container {
+  position: relative;
+  display: grid !important; }
+  #carousel .carousel-container .slide-1 {
+    background: url("../img/5f607e88c268e46148a68783_CS2520IMG2520125402x-p-2000.jpeg") no-repeat 0 30%/cover;
+    height: 600px; }
+  #carousel .carousel-container .slide-2 {
+    background: url("../img/5f6d82792ee39e7ced051bd6_slide2.jpg") no-repeat 0 30%/cover;
+    height: 600px; }
+  #carousel .carousel-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    #carousel .carousel-container .overlay .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none; }
+    #carousel .carousel-container .overlay .dots {
+      height: 14px;
+      width: 14px;
+      background: url("../dist/img/angle-arrow-pointing-to-right.png") no-repeat;
+      margin: 6px; }
+      #carousel .carousel-container .overlay .dots:hover {
+        cursor: pointer; }
+    #carousel .carousel-container .overlay li.slick-active div {
+      background: #fff; }
