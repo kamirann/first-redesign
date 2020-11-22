@@ -21,3 +21,25 @@ const run = () =>
 window.addEventListener("load", run);
 window.addEventListener("resize", run);
 window.addEventListener("scroll", run);
+
+// navbar
+
+const navbar = document.querySelector(".navbar");
+
+let scrolled = false;
+
+window.onscroll = function () {
+  if (window.pageYOffset > 100) {
+    navbar.classList.remove("top");
+    if (!scrolled) {
+      navbar.style.transform = "translateY(-118px)";
+    }
+    setTimeout(() => {
+      navbar.style.transform = "translateY(0)";
+      scrolled = true;
+    }, 200);
+  } else {
+    navbar.classList.add("top");
+    scrolled = false;
+  }
+};

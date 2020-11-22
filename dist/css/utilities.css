@@ -27,7 +27,7 @@ a {
   text-transform: uppercase; }
 
 .container {
-  max-width: 1250px;
+  max-width: 1280px;
   padding: 0 1rem;
   margin: auto;
   overflow: hidden; }
@@ -84,3 +84,6 @@ a {
 
 .bg-light {
   background: #ebebeb; }
+
+.navbar.top {
+  background: transparent !important; }

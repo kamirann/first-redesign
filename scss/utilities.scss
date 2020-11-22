@@ -1,7 +1,7 @@
 @import "config";
 
 .container {
-  max-width: 1250px;
+  max-width: 1280px;
   padding: 0 1rem;
   margin: auto;
   overflow: hidden;
@@ -79,4 +79,8 @@
 
 .bg-light {
   background: $lightC;
+}
+
+.navbar.top {
+  background: transparent !important;
 }
