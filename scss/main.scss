@@ -43,6 +43,42 @@
       }
     }
   }
+
+  .hero {
+    height: 100%;
+    .container {
+      height: 100%;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 4fr 3fr;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      gap: 1rem;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        h1 {
+          color: #fff !important;
+          line-height: 4rem !important;
+        }
+
+        img {
+          margin-left: 50px;
+          margin-top: 2rem;
+        }
+      }
+      .right {
+        text-align: center;
+      }
+    }
+  }
 }
 
 // SECTION : WHAT WE DO

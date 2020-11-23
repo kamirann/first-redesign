@@ -192,6 +192,30 @@ a {
         #header .navbar ul li a {
           padding-left: 2.5rem;
           color: #f3f3f3; }
+  #header .hero {
+    height: 100%; }
+    #header .hero .container {
+      height: 100%; }
+    #header .hero .grid-container {
+      display: grid;
+      grid-template-columns: 4fr 3fr;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      gap: 1rem; }
+      #header .hero .grid-container .left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between; }
+        #header .hero .grid-container .left h1 {
+          color: #fff !important;
+          line-height: 4rem !important; }
+        #header .hero .grid-container .left img {
+          margin-left: 50px;
+          margin-top: 2rem; }
+      #header .hero .grid-container .right {
+        text-align: center; }
 
 #whatWeDo .wwd-container {
   display: grid;
