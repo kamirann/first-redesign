@@ -129,23 +129,38 @@
   .article-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 6rem;
+    margin-top: 3rem;
     grid-gap: 2rem;
 
     .single-article {
-      img {
-        background: url("../img/5f8f07437409b8d16e0afda1_Brand-Awareness-Image.jpeg")
-          no-repeat center center/cover;
-        border-radius: 50% 50% 0 0;
-        width: 100%;
-        height: 280px;
-      }
+      perspective: 80px;
 
-      .article-text {
-        background: $secondaryC;
-        padding: 1rem 2rem;
-        margin-top: -10px;
-        border-radius: 0 0 25% 25%;
+      .inner {
+        transition: transform 0.5s;
+        -webkit-transition: transform 0.5s;
+        img {
+          background: url("../img/5f8f07437409b8d16e0afda1_Brand-Awareness-Image.jpeg")
+            no-repeat center center/cover;
+          border-radius: 50% 50% 0 0;
+          width: 100%;
+          height: 280px;
+        }
+
+        .article-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background: $lightC;
+          color: $secondaryC;
+          padding: 1rem 2rem;
+          margin-top: -10px;
+          height: 380px;
+          border-radius: 0 0 25% 25%;
+
+          .text {
+            color: rgba($darkC, 0.6);
+          }
+        }
       }
     }
   }
