@@ -31,7 +31,6 @@ window.addEventListener("scroll", run);
 // navbar
 
 const navbar = document.querySelector(".navbar");
-const overlayNav = document.querySelector(".overlay-nav");
 
 let scrolled = false;
 
@@ -62,8 +61,8 @@ $(".carousel-container").slick({
 // 3D ANIMATION
 (function () {
   // Init
-  var container = document.getElementsByClassName("single-article"),
-    inner = document.querySelectorAll(".inner");
+  const container = document.querySelector(".single-article"),
+    inner = document.querySelector(".inner");
 
   // Mouse
   var mouse = {
