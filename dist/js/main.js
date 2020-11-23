@@ -55,6 +55,6 @@ $(".carousel-container").slick({
   prevArrows: document.querySelector("#slick-prev"),
   dots: true,
   customPaging: function (slider, i) {
-    return '<div class="dots"></div>';
+    return '<img src="../dist/img/angle-arrow-pointing-to-right.png" alt="">';
   },
 });
