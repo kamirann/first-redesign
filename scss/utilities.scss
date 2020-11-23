@@ -95,7 +95,6 @@
 .dots {
   height: 14px;
   width: 14px;
-
   margin: 6px;
 
   &:hover {
@@ -105,4 +104,22 @@
 
 li.slick-active div {
   background: #fff;
+}
+.slick-next {
+  position: absolute;
+  font-size: 48px;
+  background: transparent;
+  right: 100px;
+  border: none;
+  top: 30px;
+}
+
+.slick-prev {
+  position: absolute;
+  font-size: 48px;
+  background: transparent;
+  right: 150px;
+  border: none;
+  z-index: 200;
+  top: 30px;
 }
