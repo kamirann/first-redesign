@@ -86,7 +86,8 @@ a {
   background: #ebebeb; }
 
 .navbar.top {
-  background: transparent !important; }
+  background: transparent !important;
+  border: none !important; }
 
 .slick-dots {
   position: absolute;

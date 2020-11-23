@@ -9,22 +9,25 @@
   height: 100vh;
   .navbar {
     position: fixed;
-    background-color: $darkC;
+    background-color: $secondaryC;
     transition: 0.5s;
+    z-index: 2;
+    width: 100%;
 
     .overlay-nav {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 6rem;
+      padding: 1.5rem 0;
       width: 100%;
-      z-index: 2;
     }
 
     ul {
       display: flex;
       list-style: none;
+      margin: 0;
+      padding: 0;
 
       li {
         padding: 1rem;

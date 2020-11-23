@@ -31,6 +31,7 @@ window.addEventListener("scroll", run);
 // navbar
 
 const navbar = document.querySelector(".navbar");
+const overlayNav = document.querySelector(".overlay-nav");
 
 let scrolled = false;
 
