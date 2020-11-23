@@ -138,16 +138,17 @@ li.slick-active div {
   background: url("../img/5f68ed914ee4d86a171fab47_design-tools-for-computer201201.jpg") no-repeat center 5%/cover;
   height: 100vh; }
   #header .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 6rem;
-    width: 100%;
     position: fixed;
     background-color: #11191d;
-    z-index: 2;
     transition: 0.5s; }
+    #header .navbar .overlay-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 6rem;
+      width: 100%;
+      z-index: 2; }
     #header .navbar ul {
       display: flex;
       list-style: none; }
