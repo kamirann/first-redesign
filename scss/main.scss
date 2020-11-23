@@ -43,31 +43,6 @@
       }
     }
   }
-
-  .hero {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    .left {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: space-between;
-
-      h1 {
-        color: #fff !important;
-        line-height: 4rem !important;
-      }
-
-      img {
-        margin-left: 50px;
-        margin-top: 2rem;
-      }
-    }
-  }
 }
 
 // SECTION : WHAT WE DO
@@ -151,6 +126,9 @@
 
 // WHAT'S THE LATEST?
 #whatsTheLatest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .article-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -188,5 +166,10 @@
         }
       }
     }
+  }
+
+  a.btn {
+    display: block;
+    margin: 1rem auto;
   }
 }
