@@ -143,9 +143,11 @@
 }
 
 #carousel {
+  position: relative;
   .carousel-container {
     position: relative;
     display: grid !important;
+    height: 600px;
     .slide-1 {
       background: url("../img/5f607e88c268e46148a68783_CS2520IMG2520125402x-p-2000.jpeg")
         no-repeat 0 30% / cover;
@@ -154,17 +156,37 @@
 
     .slide-2 {
       background: url("../img/5f6d82792ee39e7ced051bd6_slide2.jpg") no-repeat 0
-        30% / cover;
+        100% / cover;
       height: 600px;
+    }
+  }
+
+  .overlay-carousel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to top, $darkC, rgba(33, 44, 49, 0.01));
+
+    a {
+      display: block;
+      text-align: start;
+      padding: 2rem 0 0 2rem;
+      font: {
+        size: map-get($fontSizes, "$xlSize");
+      }
+    }
+
+    h4 {
+      color: $textC;
+      padding: 1rem 0 1rem 2rem;
     }
   }
 }
 
 // WHAT'S THE LATEST?
 #whatsTheLatest {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .article-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -207,5 +229,6 @@
   a.btn {
     display: block;
     margin: 1rem auto;
+    width: 152.85px;
   }
 }
