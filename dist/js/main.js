@@ -52,10 +52,12 @@ window.onscroll = function () {
 };
 // SLICK
 $(".carousel-container").slick({
-  nextArrows: document.querySelector("#slick-next"),
-  prevArrows: document.querySelector("#slick-prev"),
-  dots: true,
-  customPaging: function (slider, i) {
-    return '<img src="../dist/img/angle-arrow-pointing-to-right.png" alt="">';
-  },
+  prevArrow:
+    "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+  nextArrow:
+    "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  // dots: true,
+  // customPaging: function (slider, i) {
+  //   return '<img src="../dist/img/angle-arrow-pointing-to-right.png" alt="">';
+  // },
 });
