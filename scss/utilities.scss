@@ -84,3 +84,25 @@
 .navbar.top {
   background: transparent !important;
 }
+
+.slick-dots {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.dots {
+  height: 14px;
+  width: 14px;
+  background: url("../dist/img/angle-arrow-pointing-to-right.png") no-repeat;
+  margin: 6px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+li.slick-active div {
+  background: #fff;
+}
