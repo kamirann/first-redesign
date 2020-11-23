@@ -40,6 +40,7 @@ window.onscroll = function () {
     navbar.classList.remove("top");
     if (!scrolled) {
       navbar.style.transform = "translateY(-118px)";
+      navbar.style.borderBottom = "0.5px solid #ededed";
     }
     setTimeout(() => {
       navbar.style.transform = "translateY(0)";
@@ -56,8 +57,4 @@ $(".carousel-container").slick({
     "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-  // dots: true,
-  // customPaging: function (slider, i) {
-  //   return '<img src="../dist/img/angle-arrow-pointing-to-right.png" alt="">';
-  // },
 });

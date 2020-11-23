@@ -1,7 +1,7 @@
 @import "config";
 
 .container {
-  max-width: 1280px;
+  max-width: 1250px;
   padding: 0 1rem;
   margin: auto;
   overflow: hidden;
@@ -86,31 +86,15 @@
   border: none !important;
 }
 
-.slick-dots {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-.dots {
-  height: 14px;
-  width: 14px;
-  margin: 6px;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-li.slick-active div {
-  background: #fff;
-}
 .slick-next {
   position: absolute;
   font-size: 48px;
   background: transparent;
+  color: $lightC;
   right: 100px;
+  width: 15px;
+  height: 15px;
+  outline: none;
   border: none;
   top: 30px;
 }
@@ -120,6 +104,9 @@ li.slick-active div {
   font-size: 48px;
   background: transparent;
   right: 150px;
+  width: 15px;
+  height: 15px;
+  outline: none;
   border: none;
   z-index: 200;
   top: 30px;

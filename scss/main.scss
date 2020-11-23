@@ -9,7 +9,7 @@
   height: 100vh;
   .navbar {
     position: fixed;
-    background-color: $secondaryC;
+    background-color: $darkC;
     transition: 0.5s;
     z-index: 2;
     width: 100%;
@@ -30,7 +30,6 @@
       padding: 0;
 
       li {
-        padding: 1rem;
         transition: transform 0.7s;
 
         &:hover {
@@ -38,6 +37,7 @@
         }
 
         a {
+          padding-left: 2.5rem;
           color: $textC;
         }
       }
