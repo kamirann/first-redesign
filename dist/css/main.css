@@ -229,17 +229,18 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   grid-gap: 2rem; }
   #whatsTheLatest .article-container .single-article {
-    perspective: 80px; }
+    perspective: 500px; }
     #whatsTheLatest .article-container .single-article .inner {
       transition: transform 0.5s;
       -webkit-transition: transform 0.5s; }
       #whatsTheLatest .article-container .single-article .inner img {
-        background: url("../img/5f8f07437409b8d16e0afda1_Brand-Awareness-Image.jpeg") no-repeat center center/cover;
         border-radius: 50% 50% 0 0;
         width: 100%;
-        height: 280px; }
+        height: 230px; }
       #whatsTheLatest .article-container .single-article .inner .article-text {
         display: flex;
         flex-direction: column;
@@ -247,7 +248,7 @@ a {
         background: #ebebeb;
         color: #546e7a;
         padding: 1rem 2rem;
-        margin-top: -10px;
+        margin-top: -7px;
         height: 380px;
         border-radius: 0 0 25% 25%; }
         #whatsTheLatest .article-container .single-article .inner .article-text .text {
