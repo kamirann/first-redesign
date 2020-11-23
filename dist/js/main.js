@@ -28,7 +28,6 @@ window.addEventListener("load", run);
 window.addEventListener("resize", run);
 window.addEventListener("scroll", run);
 
-<<<<<<< HEAD:dist/main.js
 // navbar
 
 const navbar = document.querySelector(".navbar");
@@ -50,7 +49,6 @@ window.onscroll = function () {
     scrolled = false;
   }
 };
-=======
 // SLICK
 $(".carousel-container").slick({
   nextArrows: document.querySelector("#slick-next"),
@@ -60,4 +58,3 @@ $(".carousel-container").slick({
     return '<div class="dots"></div>';
   },
 });
->>>>>>> e3627fbd9d62a633a63bdedda4c76ccca41f91a4:dist/js/main.js
