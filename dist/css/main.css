@@ -132,7 +132,8 @@ a {
   height: 15px;
   outline: none;
   border: none;
-  top: 30px; }
+  top: 30px;
+  z-index: 1; }
 
 .slick-prev {
   position: absolute;
@@ -145,7 +146,8 @@ a {
   outline: none;
   border: none;
   z-index: 200;
-  top: 30px; }
+  top: 30px;
+  z-index: 1; }
 
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -264,26 +266,43 @@ a {
     display: grid !important;
     height: 600px; }
     #carousel .carousel-container .slide-1 {
+      position: relative;
       background: url("../img/5f607e88c268e46148a68783_CS2520IMG2520125402x-p-2000.jpeg") no-repeat 0 30%/cover;
       height: 600px; }
+      #carousel .carousel-container .slide-1 .overlay-carousel {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to top, rgba(33, 44, 49, 0.5), rgba(33, 44, 49, 0.01)); }
+        #carousel .carousel-container .slide-1 .overlay-carousel a {
+          display: block;
+          text-align: start;
+          padding: 2rem 0 0 2rem;
+          font-size: 4rem; }
+        #carousel .carousel-container .slide-1 .overlay-carousel h4 {
+          color: #f3f3f3;
+          padding: 1rem 0 1rem 2rem; }
     #carousel .carousel-container .slide-2 {
+      position: relative;
       background: url("../img/5f6d82792ee39e7ced051bd6_slide2.jpg") no-repeat 0 100%/cover;
       height: 600px; }
-  #carousel .overlay-carousel {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background: linear-gradient(to top, #212c31, rgba(33, 44, 49, 0.01)); }
-    #carousel .overlay-carousel a {
-      display: block;
-      text-align: start;
-      padding: 2rem 0 0 2rem;
-      font-size: 4rem; }
-    #carousel .overlay-carousel h4 {
-      color: #f3f3f3;
-      padding: 1rem 0 1rem 2rem; }
+      #carousel .carousel-container .slide-2 .overlay-carousel {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to top, rgba(33, 44, 49, 0.5), rgba(33, 44, 49, 0.01)); }
+        #carousel .carousel-container .slide-2 .overlay-carousel a {
+          display: block;
+          text-align: start;
+          padding: 2rem 0 0 2rem;
+          font-size: 4rem; }
+        #carousel .carousel-container .slide-2 .overlay-carousel h4 {
+          color: #f3f3f3;
+          padding: 1rem 0 1rem 2rem; }
 
 #whatsTheLatest .article-container {
   display: grid;
@@ -292,27 +311,28 @@ a {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   grid-gap: 2rem; }
-  #whatsTheLatest .article-container .single-article {
-    perspective: 500px; }
-    #whatsTheLatest .article-container .single-article .inner {
-      transition: transform 0.5s;
-      -webkit-transition: transform 0.5s; }
-      #whatsTheLatest .article-container .single-article .inner img {
-        border-radius: 50% 50% 0 0;
-        width: 100%;
-        height: 230px; }
-      #whatsTheLatest .article-container .single-article .inner .article-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background: #ebebeb;
-        color: #546e7a;
-        padding: 1rem 2rem;
-        margin-top: -7px;
-        height: 380px;
-        border-radius: 0 0 25% 25%; }
-        #whatsTheLatest .article-container .single-article .inner .article-text .text {
-          color: rgba(33, 44, 49, 0.6); }
+  #whatsTheLatest .article-container a {
+    height: 620px; }
+    #whatsTheLatest .article-container a .single-article {
+      perspective: 500px; }
+      #whatsTheLatest .article-container a .single-article .inner {
+        transition: transform 0.5s;
+        -webkit-transition: transform 0.5s; }
+        #whatsTheLatest .article-container a .single-article .inner img {
+          width: 100%;
+          height: 240px; }
+        #whatsTheLatest .article-container a .single-article .inner .article-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background: #ebebeb;
+          color: #546e7a;
+          padding: 1rem 2rem;
+          margin-top: -8px;
+          height: 380px; }
+          #whatsTheLatest .article-container a .single-article .inner .article-text .text {
+            color: rgba(33, 44, 49, 0.6);
+            text-transform: capitalize; }
 
 #whatsTheLatest a.btn {
   display: block;
