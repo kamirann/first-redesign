@@ -133,7 +133,11 @@ a {
   outline: none;
   border: none;
   top: 30px;
+<<<<<<< HEAD
   z-index: 1; }
+=======
+  cursor: pointer; }
+>>>>>>> 78c784c16ff7fa07ad2315a936bb510c9a64167a
 
 .slick-prev {
   position: absolute;
@@ -145,9 +149,15 @@ a {
   height: 15px;
   outline: none;
   border: none;
+<<<<<<< HEAD
   z-index: 200;
   top: 30px;
   z-index: 1; }
+=======
+  z-index: 1;
+  top: 30px;
+  cursor: pointer; }
+>>>>>>> 78c784c16ff7fa07ad2315a936bb510c9a64167a
 
 .bounce {
   -moz-animation: bounce 2s infinite;

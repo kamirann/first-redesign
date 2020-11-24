@@ -101,6 +101,7 @@
   border: none;
   top: 30px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .slick-prev {
@@ -113,9 +114,10 @@
   height: 15px;
   outline: none;
   border: none;
-  z-index: 200;
+  z-index: 1;
   top: 30px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .bounce {

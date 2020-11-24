@@ -57,6 +57,7 @@ $(".carousel-container").slick({
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   autoplay: true,
+  autoplaySpeed: 4000,
 });
 
 // 3D ANIMATION
